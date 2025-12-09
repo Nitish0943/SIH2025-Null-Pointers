@@ -1,0 +1,283 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --bg-gradients-linear: rgba(255, 255, 255, 0.85);
+  --body-b-font-family: "Manrope", Helvetica;
+  --body-b-font-size: 16px;
+  --body-b-font-style: normal;
+  --body-b-font-weight: 700;
+  --body-b-letter-spacing: 0px;
+  --body-b-line-height: 150%;
+  --body-l-b-font-family: "Manrope", Helvetica;
+  --body-l-b-font-size: 20px;
+  --body-l-b-font-style: normal;
+  --body-l-b-font-weight: 700;
+  --body-l-b-letter-spacing: 0px;
+  --body-l-b-line-height: 150%;
+  --body-l-font-family: "Manrope", Helvetica;
+  --body-l-font-size: 20px;
+  --body-l-font-style: normal;
+  --body-l-font-weight: 500;
+  --body-l-letter-spacing: 0px;
+  --body-l-line-height: 150%;
+  --body-l-m-font-family: "Manrope", Helvetica;
+  --body-l-m-font-size: 20px;
+  --body-l-m-font-style: normal;
+  --body-l-m-font-weight: 600;
+  --body-l-m-letter-spacing: 0px;
+  --body-l-m-line-height: 150%;
+  --body-m-font-family: "Manrope", Helvetica;
+  --body-m-font-size: 16px;
+  --body-m-font-style: normal;
+  --body-m-font-weight: 500;
+  --body-m-letter-spacing: 0px;
+  --body-m-line-height: 150%;
+  --body-r-font-family: "Manrope", Helvetica;
+  --body-r-font-size: 16px;
+  --body-r-font-style: normal;
+  --body-r-font-weight: 400;
+  --body-r-letter-spacing: 0px;
+  --body-r-line-height: 150%;
+  --body-SM-font-family: "Manrope", Helvetica;
+  --body-SM-font-size: 16px;
+  --body-SM-font-style: normal;
+  --body-SM-font-weight: 600;
+  --body-SM-letter-spacing: 0px;
+  --body-SM-line-height: 150%;
+  --body-too-small-m-font-family: "Manrope", Helvetica;
+  --body-too-small-m-font-size: 12px;
+  --body-too-small-m-font-style: normal;
+  --body-too-small-m-font-weight: 500;
+  --body-too-small-m-letter-spacing: 0px;
+  --body-too-small-m-line-height: 150%;
+  --body-too-small-r-font-family: "Manrope", Helvetica;
+  --body-too-small-r-font-size: 12px;
+  --body-too-small-r-font-style: normal;
+  --body-too-small-r-font-weight: 400;
+  --body-too-small-r-letter-spacing: 0px;
+  --body-too-small-r-line-height: 150%;
+  --bodysmall-sm-font-family: "Manrope", Helvetica;
+  --bodysmall-sm-font-size: 14px;
+  --bodysmall-sm-font-style: normal;
+  --bodysmall-sm-font-weight: 600;
+  --bodysmall-sm-letter-spacing: 0px;
+  --bodysmall-sm-line-height: 150%;
+  --drop-shadow: 10px 25px 100px 0px rgba(0, 43, 107, 0.25);
+  --neutral-10: rgba(255, 255, 255, 1);
+  --neutral-30: rgba(237, 237, 237, 1);
+  --neutralneutral-100: rgba(198, 202, 209, 1);
+  --neutralneutral-200: rgba(170, 177, 186, 1);
+  --neutralneutral-300: rgba(132, 141, 155, 1);
+  --neutralneutral-400: rgba(108, 119, 135, 1);
+  --neutralneutral-50: rgba(237, 238, 240, 1);
+  --neutralneutral-500: rgba(71, 85, 105, 1);
+  --neutralneutral-600: rgba(65, 77, 96, 1);
+  --neutralneutral-700: rgba(50, 60, 75, 1);
+  --neutralneutral-900: rgba(30, 36, 44, 1);
+  --primaryprimary-100: rgba(176, 208, 255, 1);
+  --primaryprimary-200: rgba(138, 185, 255, 1);
+  --primaryprimary-900: rgba(0, 43, 107, 1);
+  --pure-white-ffffff: rgba(255, 255, 255, 1);
+  --stroke: rgba(230, 233, 234, 1);
+  --success-65c18c: rgba(101, 193, 140, 1);
+  --white: rgba(255, 255, 255, 1);
+  --white-2-fafafa: rgba(250, 250, 250, 1);
+  --yellow-ffc805: rgba(255, 200, 5, 1);
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
